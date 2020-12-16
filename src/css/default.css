@@ -58,7 +58,7 @@ a {
 ::selection {
 
 	color: var(--bg);
-	background-color: var(--yellow);
+	background-color: var(--color);
 
 }
 
@@ -97,8 +97,7 @@ hr {
 
 	height: 1px;
 	border: 0;
-	background-color: #fff;
-	opacity: .1;
+	background-color: var(--border);
 
 }
 

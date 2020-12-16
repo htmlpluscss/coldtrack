@@ -1,0 +1,30 @@
+.cloud-space {
+
+	&__box {
+
+		display: flex;
+
+	}
+
+	p {
+
+		font-size: 24px;
+		font-weight: 300;
+		line-height: 40px;
+		margin: 36px 0 60px;
+
+	}
+
+	&__btns {
+
+		display: flex;
+
+		.btn {
+
+			margin-right: 24px;
+
+		}
+
+	}
+
+}

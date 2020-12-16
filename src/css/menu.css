@@ -17,18 +17,12 @@
 
 	&__item {
 
-		margin: 0 24px;
+		margin: 0 15px;
 
-		&.is-current {
+		&.is-active {
 
-			color: var(--yellow);
+			color: #9b9ca8;
 			pointer-events: none;
-
-		}
-
-		@media ($mdWidth) {
-
-			margin: 36px 0;
 
 		}
 
@@ -37,25 +31,16 @@
 	&__link {
 
 		font-size: 15px;
-		font-weight: 500;
-		color: inherit;
+		color: var(--color);
 		display: block;
-		transform: var(--transitionDefault);
 
 		@media ($desktop) {
 
 			&:hover {
 
-				color: color(var(--color) a(50%));
+				color: #9b9ca8;
 
 			}
-
-		}
-
-		@media ($mdWidth) {
-
-			font-size: 20px;
-			text-align: center;
 
 		}
 

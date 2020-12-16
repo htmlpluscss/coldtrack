@@ -16,7 +16,8 @@
 .center {
 
 	margin: 0 auto;
-	width: 1080px;
+	width: 1152px;
+	padding: 0 36px;
 	max-width: 100%;
 	position: relative;
 
