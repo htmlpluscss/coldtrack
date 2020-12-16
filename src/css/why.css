@@ -1,0 +1,60 @@
+.why {
+
+	background-color: var(--bg);
+	padding: 48px 0;
+	text-align: center;
+
+	&__title {
+
+
+	}
+
+	&__list  {
+
+		display: flex;
+		justify-content: space-between;
+
+	}
+
+	&__item {
+
+		width: 300px;
+
+		.h3 {
+
+			color: var(--blue);
+
+		}
+
+		p {
+
+			a {
+
+				color: var(--green);
+
+			}
+
+		}
+
+	}
+
+	&__ico {
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 80px;
+		width: 80px;
+		background-color: #fff;
+		border-radius: 50%;
+		margin: auto;
+
+		svg {
+
+			fill: var(--blue);
+
+		}
+
+	}
+
+}
