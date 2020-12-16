@@ -1,0 +1,44 @@
+.subscribe {
+
+	margin: 72px 0;
+
+	&__bg {
+
+		background-color: var(--bg);
+		border-radius: 12px;
+		padding: 48px;
+
+	}
+
+	&__wrap {
+
+		position: relative;
+
+	}
+
+	svg {
+
+		position: absolute;
+		top: 20px;
+		left: 20px;
+		fill: var(--text);
+		outline:1px solid red;
+		pointer-events: none;
+
+	}
+
+	.input {
+
+		padding-left: 52px;
+
+	}
+
+	.btn {
+
+		position: absolute;
+		top: 4px;
+		right: 4px;
+
+	}
+
+}

@@ -64,7 +64,7 @@
 
 			&:hover {
 
-				background-color: color(var(--blue) a(40%));
+				background-color: color(var(--blue) a(90%));
 
 			}
 
@@ -80,7 +80,7 @@
 
 			&:hover {
 
-				background-color: color(var(--green) a(40%));
+				background-color: color(var(--green) a(90%));
 
 			}
 
@@ -133,8 +133,8 @@
 	padding: 20px;
 
 	font-size: 16px;
-	color: #000;
-	font-weight: 600;
+	color: var(--color);
+	font-weight: 400;
 
 	width: 100%;
 	font-family: inherit;
@@ -146,8 +146,8 @@
 
 	border-radius: 8px;
 
-	border: 1px solid color(var(--bg) a(20%));
-	background-color: transparent;
+	border: 0;
+	background-color: #fff;
 
 	textarea& {
 
@@ -159,8 +159,8 @@
 
 	&::placeholder {
 
-		color: inherit;
-		opacity: .4;
+		color: var(--text);
+		opacity: 1;
 
 	}
 
@@ -174,7 +174,7 @@
 
 		&:hover {
 
-			border-color: var(--bg);
+			/* border-color: var(--bg); */
 
 		}
 
@@ -183,11 +183,11 @@
 	&:focus {
 
 		outline: none;
-		border-color: var(--color) !important;
+		/* border-color: var(--color) !important; */
 
 	}
 
-	&[disabled] {
+	&:disabled {
 
 		pointer-events: none;
 
@@ -211,7 +211,7 @@
 
 	to {
 
-		color: #000;
+		color: var(--color);
 		background-color: #fff;
 
 	}
