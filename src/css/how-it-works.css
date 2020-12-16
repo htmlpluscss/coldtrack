@@ -1,0 +1,28 @@
+.how-it-works {
+
+	padding-top: 72px;
+
+	&__box {
+
+		display: flex;
+		align-items: center;
+
+	}
+
+	&__title {
+
+		text-align: center;
+		margin: 48px 0;
+
+	}
+
+	&__intro {
+
+		font-size: 24px;
+		font-weight: 300;
+		line-height: 40px;
+		text-align: center;
+
+	}
+
+}
