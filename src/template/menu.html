@@ -1,0 +1,37 @@
+		<nav class="menu">
+
+			<ul class="menu__list">
+
+				<li class="menu__item{% if urlPage === 'about' or urlPage === 'about/workshop' or urlPage === 'about/auction' or urlPage === 'about/exhibition-hall' or urlPage === 'about/glf-token'%} is-current{% endif %}">
+
+					<a class="menu__link" href="/about">About</a>
+
+				</li>
+
+				<li class="menu__item{% if urlPage === 'workshop' %} is-current{% endif %}">
+
+					<a class="menu__link" href="/workshop">Workshop</a>
+
+				</li>
+
+				<li class="menu__item{% if urlPage === 'auction' %} is-current{% endif %}">
+
+					<a class="menu__link" href="/auction">Auction</a>
+
+				</li>
+
+				<li class="menu__item{% if urlPage === 'exhibition-hall' %} is-current{% endif %}">
+
+					<a class="menu__link" href="/exhibition-hall">Exhibition hall</a>
+
+				</li>
+
+				<li class="menu__item{% if urlPage === 'pools' %} is-current{% endif %}">
+
+					<a class="menu__link" href="/pools">Pools</a>
+
+				</li>
+
+			</ul>
+
+		</nav>
