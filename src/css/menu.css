@@ -38,7 +38,7 @@
 
 			&:hover {
 
-				color: #9b9ca8;
+				color: var(--text);
 
 			}
 

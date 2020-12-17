@@ -1,11 +1,11 @@
 .social {
 
 	display: flex;
-	margin: -6px;
+	margin: -8px;
 
 	&__item {
 
-		margin: 6px;
+		margin: 8px;
 
 	}
 

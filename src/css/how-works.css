@@ -2,6 +2,22 @@
 
 	padding-top: 72px;
 	margin: 60px 0;
+	position: relative;
+
+	&__rotate-left {
+
+		position: absolute;
+		top: -16px;
+		left: 36px;
+	}
+
+	&__rotate-right {
+
+		position: absolute;
+		top: 0;
+		right: 0;
+
+	}
 
 	&__box {
 
@@ -23,6 +39,7 @@
 		line-height: 30px;
 		text-align: center;
 		margin: 24px 0;
+		color: var(--text);
 
 	}
 
@@ -38,6 +55,7 @@
 
 		width: 490px;
 		padding-right: 35px;
+		color: var(--text);
 
 		p {
 

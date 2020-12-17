@@ -13,8 +13,9 @@
 	&__left {
 
 		order: 1;
-		width: 300px;
+		width: 256px;
 		flex-shrink: 0;
+		margin-right: 32px;
 
 	}
 
@@ -30,13 +31,13 @@
 	&__right {
 
 		flex-shrink: 0;
-		width: 300px;
+		width: 268px;
 		order: 3;
 
 		p {
 
 			color: var(--text);
-			margin-bottom: 12px;
+			margin: 12px 0 20px;
 
 		}
 
@@ -47,7 +48,7 @@
 		color: var(--text);
 		font-size: 14px;
 		line-height: 24px;
-		margin: 12px 0;
+		margin: 20px 0;
 
 	}
 
@@ -55,15 +56,12 @@
 
 		display: flex;
 		flex-wrap: wrap;
-		width: 500px;
-		margin: -12px;
+		width: 346px;
 
 		li {
 
-			margin: 12px;
+			margin: 12px 0;
 			width: 50%;
-			font-size: 15px;
-			line-height: 24px;
 
 		}
 

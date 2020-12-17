@@ -1,8 +1,25 @@
 .team {
 
-	background-color: var(--bg);
+	background-color: color(var(--bg) a(50%));
 	padding: 96px 0;
 	margin: 60px 0;
+	position: relative;
+
+	&__rotate-left {
+
+		position: absolute;
+		top: -134px;
+		left: 36px;
+
+	}
+
+	&__rotate-right {
+
+		position: absolute;
+		top: 0;
+		right: 36px;
+
+	}
 
 	&__title {
 
@@ -103,6 +120,16 @@
 
 			color: var(--blue);
 			border-bottom: 1px solid;
+
+			@media ($desktop) {
+
+				&:hover {
+
+					border-bottom-color: transparent;
+
+				}
+
+			}
 
 		}
 

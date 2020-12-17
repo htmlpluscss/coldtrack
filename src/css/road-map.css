@@ -1,6 +1,23 @@
 .road-map {
 
 	padding: 54px 0 48px;
+	position: relative;
+
+	&__rotate-left {
+
+		position: absolute;
+		top: -8px;
+		left: 36px;
+
+	}
+
+	&__rotate-right {
+
+		position: absolute;
+		top: 266px;
+		right: 36px;
+
+	}
 
 	&__title {
 
@@ -14,6 +31,7 @@
 		line-height: 30px;
 		text-align: center;
 		margin: 24px 0;
+		color: var(--text);
 
 	}
 
@@ -32,7 +50,7 @@
 			bottom: 0;
 			content: '';
 			margin: auto;
-			background-color: #E7E6FB;
+			background-color: #e7e6fb;
 			border-radius: 2px;
 
 		}
@@ -105,7 +123,7 @@
 	&__list {
 
 		padding: 24px;
-		background: rgba(231, 230, 251, 0.5);
+		background: color(#e7e6fb a(50%));
 		border-radius: 12px;
 		counter-reset: headings 0;
 		position: relative;

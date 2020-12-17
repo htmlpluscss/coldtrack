@@ -1,6 +1,6 @@
 .why {
 
-	background-color: var(--bg);
+	background-color: color(var(--bg) a(50%));
 	padding: 60px 0;
 	margin: 96px 0 72px;
 	text-align: center;
