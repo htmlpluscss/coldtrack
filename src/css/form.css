@@ -80,7 +80,7 @@
 
 			&:hover {
 
-				background-color: color(var(--green) a(90%));
+				background-color: #e6f8ed;
 
 			}
 
@@ -120,6 +120,29 @@
 		height: 52px;
 		font-size: 16px;
 		line-height: 52px;
+
+	}
+
+	&--play {
+
+		color: var(--green);
+		padding-right: 70px;
+		height: 68px;
+		line-height: 68px;
+		font-size: 18px;
+		padding-left: 24px;
+		background-color: #e6f8ed;
+
+		svg {
+
+			position: absolute;
+			top: 0;
+			right: 24px;
+			bottom: 0;
+			fill: var(--green);
+			margin: auto;
+
+		}
 
 	}
 

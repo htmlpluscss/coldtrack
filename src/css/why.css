@@ -1,28 +1,33 @@
 .why {
 
 	background-color: var(--bg);
-	padding: 48px 0;
+	padding: 60px 0;
+	margin: 96px 0;
 	text-align: center;
 
 	&__title {
 
+		margin: 72px 0;
 
 	}
 
 	&__list  {
 
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
+		margin-bottom: 72px;
 
 	}
 
 	&__item {
 
 		width: 300px;
+		margin: 0 20px;
 
-		.h3 {
+		.h4 {
 
 			color: var(--blue);
+			margin: 24px 0 6px;
 
 		}
 
