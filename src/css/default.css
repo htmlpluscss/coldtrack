@@ -38,8 +38,8 @@ body {
 	position: relative;
 	-webkit-font-smoothing: antialiased;
 
-/* background-image: url(/css/desktop.png); */
-background-position: center 3px;
+/* background-image: url(/css/demo.png); */
+background-position: center 0px;
 }
 
 a {
@@ -193,5 +193,15 @@ a[href^="tel"],
 .white-space-nowrap {
 
 	white-space: nowrap;
+
+}
+
+.text-ellipsis {
+
+	display: block;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	max-width: 100%;
 
 }

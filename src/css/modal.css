@@ -18,22 +18,37 @@
 
 	&__box {
 
-		width: 528px;
-		max-width: 100%;
 		position: relative;
 
 	}
 
 	&__item {
 
+		width: 420px;
+		max-width: 100%;
 		position: relative;
-		padding: 60px;
+		padding: 48px;
 		border-radius: 12px;
 		background-color: #fff;
 
+		&--done {
+
+			text-align: center;
+			font-weight: 300;
+			font-size: 16px;
+			line-height: 30px;
+
+			svg {
+
+				margin: 0 auto 16px;
+
+			}
+
+		}
+
 		@media ($smWidth) {
 
-			padding: 20px;
+			padding: 24px;
 
 		}
 
@@ -42,38 +57,14 @@
 	&__close-btn {
 
 		position: absolute;
-		top: 24px;
-		right: 24px;
+		top: 4px;
+		right: 4px;
 
 		svg {
 
-			fill: #000;
+			fill: var(--text);
 
 		}
-
-	}
-
-	&__title {
-
-		font-weight: 400;
-		margin-bottom: 18px;
-		color: #000;
-
-	}
-
-	&__btn-ok {
-
-		width: 100%;
-		margin-top: 60px;
-
-	}
-
-	&__logo {
-
-		margin: 24px auto;
-		display: flex;
-		justify-content: center;
-		align-items: center;
 
 	}
 
@@ -105,9 +96,157 @@
 			right: 0;
 			bottom: 0;
 			content: '';
-			opacity: 0.8;
+			opacity: 0.6;
 			z-index: 9;
-			background-color: var(--bg);
+			background-color: var(--color);
+
+		}
+
+	}
+
+}
+
+.file-details {
+
+	width: 778px;
+	padding: 0;
+
+	&__head {
+
+		color: #fff;
+		padding: 24px;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+		border-radius: 12px 12px 0 0;
+		background-color: var(--color);
+
+	}
+
+	&__table {
+
+		margin: 24px;
+
+		table {
+
+			width: 100%;
+
+		}
+
+		tr:nth-child(2n) {
+
+			th, td {
+
+				background-color: #f5f5fc;
+
+			}
+
+			th {
+
+				border-radius: 2px 0 0 2px;
+
+			}
+
+			td {
+
+				border-radius: 0 2px 2px 0;
+
+			}
+
+		}
+
+		td {
+
+			padding: 10px;
+
+		}
+
+		th {
+
+			text-align: left;
+			padding: 10px;
+
+		}
+
+		&-tooltip {
+
+			position: relative;
+			padding-left: 30px;
+
+			.tooltip {
+
+				position: absolute;
+				top: 0;
+				left: 0;
+
+			}
+
+		}
+
+		&-key,
+		&-value {
+
+			font-weight: 300;
+			font-size: 14px;
+			line-height: 20px;
+
+			.text-ellipsis {
+
+				max-width: 520px;
+
+			}
+
+			small {
+
+				color: var(--text);
+				font-size: inherit;
+
+			}
+
+			a {
+
+				color: var(--blue);
+				text-decoration: underline;
+				text-decoration-color: color(var(--blue) a(30%));
+
+				@media ($desktop) {
+
+					&:hover {
+
+						text-decoration-color: color(var(--blue) a(100%));
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	hr {
+
+		opacity: .3;
+		background-color: #a4a5b0;
+
+	}
+
+	&__download {
+
+		display: flex;
+		padding: 24px;
+
+	}
+
+	&__btn-close {
+
+		right: 16px;
+		top: 24px;
+
+		svg {
+
+			fill: #fff;
 
 		}
 
