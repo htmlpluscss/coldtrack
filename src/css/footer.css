@@ -1,37 +1,69 @@
 .footer {
 
 	flex-shrink: 0;
-	background-color: color(var(--color) a(5%));
-	padding: 12px;
-	display: flex;
-	justify-content: center;
+	margin: 52px 0;
 
-	&__links  {
+	&__box {
 
 		display: flex;
+		justify-content: space-between;
+
+	}
+
+	&__left {
+
+		order: 1;
+		width: 300px;
+		flex-shrink: 0;
+
+	}
+
+	&__center {
+
+		flex-grow: 1;
+		display: flex;
 		justify-content: center;
+		order: 2;
+
+	}
+
+	&__right {
+
+		flex-shrink: 0;
+		width: 300px;
+		order: 3;
+
+		p {
+
+			color: var(--text);
+			margin-bottom: 12px;
+
+		}
+
+	}
+
+	.copyright {
+
+		color: var(--text);
+		font-size: 14px;
+		line-height: 24px;
+		margin: 12px 0;
+
+	}
+
+	&__menu {
+
+		display: flex;
+		flex-wrap: wrap;
+		width: 500px;
+		margin: -12px;
 
 		li {
 
 			margin: 12px;
-
-		}
-
-		a {
-
-			display: block;
-			width: 30px;
-			height: 30px;
-
-			@media ($desktop) {
-
-				&:hover svg {
-
-					fill: var(--color);
-
-				}
-
-			}
+			width: 50%;
+			font-size: 15px;
+			line-height: 24px;
 
 		}
 

@@ -1,0 +1,28 @@
+.social {
+
+	display: flex;
+	margin: -6px;
+
+	&__item {
+
+		margin: 6px;
+
+	}
+
+	&__link {
+
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		display: block;
+
+		svg {
+
+			fill: var(--blue);
+			border-radius: 50%;
+
+		}
+
+	}
+
+}

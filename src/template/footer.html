@@ -6,7 +6,33 @@
 
 				<div class="footer__center">
 
-{% include "template/menu.html" %}
+					<ul class="footer__menu">
+
+						<li>
+							<a href="/demo">Live Demo</a>
+						</li>
+
+						<li>
+							<a href="/">Privacy Policy</a>
+						</li>
+
+						<li>
+							<a href="{% if urlPage !== 'main' %}/main{% endif %}#about">About</a>
+						</li>
+
+						<li>
+							<a href="/">Terms & Conditions</a>
+						</li>
+
+						<li>
+							<a href="{% if urlPage !== 'main' %}/main{% endif %}#prices">Prices</a>
+						</li>
+
+						<li>
+							<a href="/">Legal & Risk Disclaimer</a>
+						</li>
+
+					</ul>
 
 				</div>
 
@@ -16,12 +42,17 @@
 						Social:
 					</p>
 
+{% include "template/social.html" %}
 
 				</div>
 
 				<div class="footer__left">
 
 					<img class="footer__logo" src="/img/logo.svg" alt="{{ site }}" loading="lazy" width="209" height="42">
+
+					<p class="copyright">
+						Copyright © 2020 Cloudzilla Network. All Rights Reserved.
+					</p>
 
 				</div>
 
