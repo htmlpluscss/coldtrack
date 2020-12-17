@@ -14,13 +14,29 @@
 
 		width: 100%;
 
+		&__red,
+		&__green {
+
+			display: block;
+			color: var(--red);
+			font-size: 13px;
+			line-height: 20px;
+
+		}
+
+		&__green {
+
+			color: var(--green);
+
+		}
+
 		&__thead {
 
 			th {
 
 				text-align: left;
 				vertical-align: top;
-				color: var(--blue);
+				color: #a3a3a3;
 				padding-left: 20px;
 				font-size: 16px;
 				font-weight: 400;
@@ -33,6 +49,7 @@
 					font-size: 18px;
 					line-height: 24px;
 					display: block;
+					color: var(--blue);
 					margin-bottom: 2px;
 
 				}
@@ -43,21 +60,39 @@
 
 		&__coldstack {
 
-			outline:1px solid red;
-
-			tr {
-
-				background-color: var(--red);
-				border-radius: 6px;
-
-			}
-
 			td {
 
-
+				background-color: var(--blue);
 				color: #fff;
 				font-weight: 700;
-				padding: 12px 0 12px 20px;
+				padding: 0 0 0 20px;
+				height: 60px;
+				vertical-align: middle;
+				text-align: left;
+
+				&:first-child {
+
+					border-top-left-radius: 6px;
+
+				}
+
+				&:last-child {
+
+					border-top-right-radius: 6px;
+
+				}
+
+				&:first-child {
+
+					border-bottom-left-radius: 6px;
+
+				}
+
+				&:last-child {
+
+					border-bottom-right-radius: 6px;
+
+				}
 
 			}
 
@@ -65,16 +100,81 @@
 
 		&__tbody {
 
+			tr:nth-child(2n) td {
+
+				background-color: color(#f3f2fd a(50%));
+
+				.prices-table__logo-wrap {
+
+					background-color: #fff;
+
+				}
+
+				&:first-child {
+
+					border-top-left-radius: 6px;
+
+				}
+
+				&:last-child {
+
+					border-top-right-radius: 6px;
+
+				}
+
+				&:first-child {
+
+					border-bottom-left-radius: 6px;
+
+				}
+
+				&:last-child {
+
+					border-bottom-right-radius: 6px;
+
+				}
+
+			}
+
+			td {
+
+				padding: 0 0 0 20px;
+				color: #181818;
+				height: 60px;
+				vertical-align: middle;
+				text-align: left;
+
+			}
+
 		}
 
 		&__tfoot {
+
+			p {
+
+				border-top: 1px solid #e9e9ea;
+				font-size: 13px;
+				line-height: 20px;
+				color: var(--text);
+				padding: 18px 60px;
+				margin-top: 42px;
+				position: relative;
+
+				svg {
+
+					position: absolute;
+					top: 18px;
+					left: 28px;
+
+				}
+
+			}
 
 		}
 
 		&__logo {
 
-			padding-left: 20px;
-			padding-right: 4px;
+			padding: 0 4px 0 20px !important;
 			width: 36px;
 
 			&-wrap {
@@ -84,8 +184,7 @@
 				display: flex;
 				justify-content: center;
 				align-items: center;
-				outline:1px solid red;
-				/* background-color: #fff; */
+				 background-color: #f3f2fd;
 				border-radius: 50%;
 
 			}
