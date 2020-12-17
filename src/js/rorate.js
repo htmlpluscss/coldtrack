@@ -2,29 +2,30 @@
 
 	if(elems.length) {
 
-		if ('IntersectionObserver' in window) {
+		window.addEventListener("scroll", () => {
 
-			const options = {
-				root: null,
-				rootMargin: '0px',
-				threshold: [0.01]
-			};
+			window.requestAnimationFrame( () => {
 
-			const callback = (entries, observer) => {
+				Array.from(elems, el => {
 
-				Array.from(entries, entry => {
+					let deg = 0;
+					const rect = el.getBoundingClientRect();
 
-					console.log(entry)
+					if (rect.bottom >= 0 && rect.top <= window.innerHeight){
+
+						deg = 360 * ( 1 - rect.bottom / (rect.bottom - rect.top + window.innerHeight) );
+
+					}
+
+					console.log(deg)
+
+					el.querySelector('img').style.transform = "rotate(" + deg + "deg)";
 
 				});
 
-			};
+			});
 
-			const observer = new IntersectionObserver(callback, options);
-
-			observer.observe(elems);
-
-		}
+		});
 
 	}
 

@@ -1,0 +1,7 @@
+.rotate {
+
+	transform: rotate(0deg);
+	will-change: transform;
+	position: absolute;
+
+}
