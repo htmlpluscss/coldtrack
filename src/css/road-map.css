@@ -1,5 +1,165 @@
 .road-map {
 
+	padding: 54px 0;
+
+	&__title {
+
+		text-align: center;
+
+	}
+
+	&__intro {
+
+		font-size: 18px;
+		line-height: 30px;
+		text-align: center;
+		margin: 24px 0;
+
+	}
+
+	&__box {
+
+		position: relative;
+		padding: 24px 60px;
+
+		&::before {
+
+			position: absolute;
+			width: 2px;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			content: '';
+			margin: auto;
+			background-color: #E7E6FB;
+			border-radius: 2px;
+
+		}
+
+	}
+
+	&__row {
+
+		display: flex;
+		padding-right: 12px;
+		margin-top: -122px;
+
+		&--2020-q4 {
+
+			margin-top: 0;
+
+		}
+
+		&--2021-q1,
+		&--2021-q3 {
+
+			justify-content: flex-end;
+
+		}
+
+	}
+
+	&__item {
+
+		width: 418px;
+
+		&--left {
+
+			.road-map__head {
+
+				text-align: right;
+
+			}
+
+			.road-map__list {
+
+				&::before {
+
+					right: -60px;
+
+				}
+
+				&::after {
+
+					left: 100%;
+					margin-left: 52px;
+
+				}
+
+			}
+
+		}
+
+	}
+
+	&__head {
+
+		font-size: 18px;
+		line-height: 30px;
+		font-weight: 500;
+		margin: 24px 0;
+
+	}
+
+	&__list {
+
+		padding: 24px;
+		background: rgba(231, 230, 251, 0.5);
+		border-radius: 12px;
+		counter-reset: headings 0;
+		position: relative;
+
+		&::before {
+
+			position: absolute;
+			width: 60px;
+			height: 1px;
+			top: 34px;
+			right: 100%;
+			content: '';
+			background-color: var(--blue);
+
+		}
+
+		&::after {
+
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			top: 24px;
+			left: -60px;
+			content: '';
+			background-color: var(--blue);
+
+		}
+
+		li {
+
+			padding-left: 48px;
+
+			&::before {
+
+				counter-increment: headings 1;
+				content: '0' counter(headings, decimal);
+				position: absolute;
+				top: 0;
+				left: 6px;
+				color: var(--blue);
+
+			}
+
+			& + li {
+
+				margin-top: 12px;
+
+			}
+
+		}
+
+	}
+
 
 
 
