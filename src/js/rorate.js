@@ -17,7 +17,7 @@
 
 					}
 
-					console.log(deg)
+				//	console.log(deg)
 
 					el.querySelector('img').style.transform = "rotate(" + deg + "deg)";
 
