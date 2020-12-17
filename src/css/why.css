@@ -2,7 +2,7 @@
 
 	background-color: var(--bg);
 	padding: 60px 0;
-	margin: 96px 0;
+	margin: 96px 0 72px;
 	text-align: center;
 
 	&__title {
