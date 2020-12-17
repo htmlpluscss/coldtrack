@@ -7,6 +7,8 @@
 
 		display: flex;
 		justify-content: space-between;
+		border-top: 1px solid color(#a4a5b0 a(30%));
+		padding-top: 72px;
 
 	}
 
@@ -62,6 +64,20 @@
 
 			margin: 12px 0;
 			width: 50%;
+
+		}
+
+		a {
+
+			@media ($desktop) {
+
+				&:hover {
+
+					color: var(--text);
+
+				}
+
+			}
 
 		}
 
