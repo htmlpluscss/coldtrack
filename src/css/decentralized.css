@@ -1,18 +1,19 @@
 .decentralized {
 
 	text-align: center;
+	margin: 132px 0 96px;
 
 	&__logo {
 
 		display: flex;
 		flex-wrap: wrap;
+		justify-content: center;
 		align-items: center;
-		color: var(--blue);
-		margin: 48px 0;
+		margin: 36px -36px;
 
-		svg {
+		img {
 
-			fill: var(--blue);
+			margin: 12px 36px;
 
 		}
 

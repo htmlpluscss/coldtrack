@@ -1,0 +1,51 @@
+.about {
+
+	margin-top: 96px;
+
+	&__box {
+
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 100px;
+
+	}
+
+	&__list {
+
+		width: 490px;
+
+		.h3 {
+
+			margin: 12px 0 26px;
+
+		}
+
+		li {
+
+			padding-left: 36px;
+			margin: 12px 0;
+			background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 15.17l9.2-9.2 1.4 1.42L10 18l-6.36-6.36 1.41-1.42L10 15.17z' fill='%2304B94A'/%3E%3C/svg%3E");
+			background-repeat: no-repeat;
+
+		}
+
+	}
+
+	&__title {
+
+		text-align: center;
+		margin: 96px 0 24px;
+
+	}
+
+	&__intro {
+
+		font-size: 18px;
+		line-height: 30px;
+		text-align: center;
+		margin-bottom: 100px;
+
+	}
+
+}

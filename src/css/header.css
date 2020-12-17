@@ -6,7 +6,7 @@
 
 	.center {
 
-		width: 100%;
+		width: 1440px;
 
 	}
 
@@ -35,7 +35,7 @@
 
 	&__btn {
 
-		margin-left: 24px;
+		margin-left: 64px;
 		flex-shrink: 0;
 
 	}

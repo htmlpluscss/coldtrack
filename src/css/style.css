@@ -13,13 +13,14 @@
 @import url(cloud-space.css);
 @import url(subscribe.css);
 @import url(decentralized.css);
-@import url(what-is.css);
-@import url(how-it-works.css);
+@import url(about.css);
+@import url(how-works.css);
 @import url(why.css);
-@import url(use-cases.css);
-@import url(pricing-comparison.css);
+@import url(cases.css);
+@import url(prices.css);
+@import url(road-map.css);
+@import url(team.css);
+@import url(demo.css);
 
-
-/* @import url(tooltip.css); */
-/* @import url(breadcrumbs.css); */
+@import url(tooltip.css);
 

@@ -1,15 +1,15 @@
-{% set title = "Try The Cheapest Cloud Space Ever " %}
+{% set title = "Live Demo" %}
 
 {% set description = "Uber for Clouds: first to market Aggregator of Decentralized Data Storages such as Filecoin." %}
 
-{% set urlPage = "main" %}
+{% set urlPage = "demo" %}
 
-{% set state = "main" %}
+{% set state = "demo" %}
 
 {% set preloadImage = [
 	{
 		media: "(min-width: 1200px)",
-		img : "/img/cloud-space/img.svg"
+		img : "/img/billboard/img--1380x623.webp"
 	},
 	{
 		media: "(max-width: 360px)",
@@ -24,13 +24,10 @@
 {% include "main/cloud-space.html" %}
 {% include "main/subscribe.html" %}
 {% include "main/decentralized.html" %}
-{% include "main/about.html" %}
-{% include "main/how-works.html" %}
+{% include "main/what-is.html" %}
+{% include "main/how-it-works.html" %}
 {% include "main/why.html" %}
-{% include "main/cases.html" %}
-{% include "main/prices.html" %}
-{% include "main/road-map.html" %}
-{% include "main/team.html" %}
-{% include "main/subscribe.html" %}
+{% include "main/use-cases.html" %}
+{% include "main/pricing-comparison.html" %}
 
 {% endblock %}

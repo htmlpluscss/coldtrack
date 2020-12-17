@@ -4,31 +4,31 @@
 
 				<li class="menu__item">
 
-					<a class="menu__link" href="/">Live Demo </a>
+					<a class="menu__link" href="/demo">Live Demo</a>
 
 				</li>
 
 				<li class="menu__item">
 
-					<a class="menu__link" href="/">About</a>
+					<a class="menu__link" href="{% if urlPage !== 'main' %}/main{% endif %}#about">About</a>
 
 				</li>
 
 				<li class="menu__item">
 
-					<a class="menu__link" href="/">How it Works</a>
+					<a class="menu__link" href="{% if urlPage !== 'main' %}/main{% endif %}#how-works">How it Works</a>
 
 				</li>
 
 				<li class="menu__item">
 
-					<a class="menu__link" href="/">Prices</a>
+					<a class="menu__link" href="{% if urlPage !== 'main' %}/main{% endif %}#prices">Prices</a>
 
 				</li>
 
 				<li class="menu__item">
 
-					<a class="menu__link" href="/">Team</a>
+					<a class="menu__link" href="{% if urlPage !== 'main' %}/main{% endif %}#team">Team</a>
 
 				</li>
 
