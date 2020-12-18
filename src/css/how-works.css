@@ -39,7 +39,7 @@
 
 		@media ($smWidth) {
 
-			top: -124px;
+			top: -125px;
 			left: 50%;
 			margin-left: -46px;
 
@@ -109,6 +109,29 @@
 
 				width: 320px;
 				height: 506px;
+
+			}
+
+		}
+
+		@media ($smWidth) {
+
+			width: 100%;
+
+			img {
+
+				margin: auto;
+
+			}
+
+		}
+
+		@media ($xsWidth) {
+
+			img {
+
+				width: 100%;
+				height: auto;
 
 			}
 

@@ -49,6 +49,12 @@
 
 		}
 
+		@media ($xsWidth) {
+
+			margin:	26px -10px 34px;
+
+		}
+
 	}
 
 	p {

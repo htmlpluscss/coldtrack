@@ -6,6 +6,12 @@
 	margin-top: 84px;
 	margin-bottom: 68px;
 
+	@media ($smWidth) {
+
+		margin: 36px 0;
+
+	}
+
 	h1 {
 
 		font-size: 30px;

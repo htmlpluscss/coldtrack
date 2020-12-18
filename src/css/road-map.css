@@ -13,7 +13,13 @@
 
 		position: absolute;
 		top: -8px;
-		left: 36px;
+		left: 36px;;
+
+		@media ($smWidth) {
+
+			display: none;
+
+		}
 
 	}
 
@@ -21,7 +27,13 @@
 
 		position: absolute;
 		top: 266px;
-		right: 36px;
+		right: 36px;;
+
+		@media ($smWidth) {
+
+			display: none;
+
+		}
 
 	}
 

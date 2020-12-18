@@ -18,7 +18,7 @@
 			swipeNav = document.createElement('div'),
 			items = swipe.querySelectorAll('.swiper-slide'),
 			count = items.length,
-			mainTop = swipe.classList.contains('swiper-container--cases');
+			cases = swipe.classList.contains('swiper-container--cases');
 
 		swipeNav.className = 'swiper-pagination';
 		swipeControls.className = 'swiper-controls';
@@ -36,7 +36,6 @@
 			}
 
 			swipeNav.classList.add('hide');
-			swipeBtns.classList.add('hide');
 
 		}
 
@@ -44,14 +43,20 @@
 
 		if (cases) {
 
+			const current = document.querySelector('.cases__process-current');
+
 			toggleSwipe = () => {
 
 				resetSwipe();
 
 				swipeNav.classList.remove('hide');
-				swipeBtns.classList.remove('hide');
+				current.parentNode.classList.add('hide');
+				swipe.parentNode.classList.remove('swiper-container-style');
 
 				if(window.innerWidth < 768) {
+
+					swipe.parentNode.classList.add('swiper-container-style');
+					current.parentNode.classList.remove('hide');
 
 					mySwipe = new Swiper(swipe, {
 						loop: true,
@@ -59,6 +64,11 @@
 							el: swipeNav,
 							bulletClass: 'button',
 							bulletActiveClass: 'is-active'
+						},
+						on: {
+							slideChangeTransitionEnd: () => {
+								current.textContent = (swipe.swiper.realIndex % count + 1);
+							}
 						}
 					});
 
@@ -100,7 +110,7 @@
 
 			script.onload = () => PubSub.publish('swiperJsLoad');
 
-			setTimeout( () => document.head.appendChild(script), 10000);
+			setTimeout( () => document.head.appendChild(script), 1);
 
 		}
 

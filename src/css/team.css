@@ -23,6 +23,12 @@
 		top: -134px;
 		left: 36px;
 
+		@media ($mdWidth) {
+
+			display: none;
+
+		}
+
 	}
 
 	&__rotate-right {
@@ -31,6 +37,13 @@
 		top: 0;
 		right: 36px;
 
+		@media ($mdWidth) {
+
+			top: -118px;
+			right: 20px;
+
+		}
+
 	}
 
 	&__title {
@@ -38,9 +51,15 @@
 		text-align: center;
 		margin-bottom: 132px;
 
+		@media ($mdWidth) {
+
+			margin-bottom: 96px;
+
+		}
+
 		@media ($smWidth) {
 
-			margin-bottom: htmlpluscss/coldtrac;
+			margin-bottom: 0;
 
 		}
 
@@ -55,6 +74,11 @@
 		@media ($mdWidth) {
 
 			flex-wrap: wrap;
+
+		}
+
+		@media ($smWidth) {
+
 			margin: 0;
 
 		}
@@ -71,7 +95,7 @@
 
 		@media ($mdWidth) {
 
-			margin-bottom: 48px;
+			margin: 72px 24px;
 
 		}
 
@@ -79,6 +103,7 @@
 
 			margin: 100px 0 0;
 			padding: 30px 20px;
+			width: auto;
 
 		}
 

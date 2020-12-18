@@ -75,6 +75,12 @@
 
 				}
 
+				@media ($xsWidth) {
+
+					padding-left: 10px;
+
+				}
+
 				b {
 
 					font-weight: 400;
@@ -87,6 +93,12 @@
 					@media ($smWidth) {
 
 						margin-bottom: 6px;
+
+					}
+
+					@media ($xsWidth) {
+
+						font-size: 16px;
 
 					}
 
@@ -261,7 +273,8 @@
 
 				@media ($smWidth) {
 
-					padding: 19px 10px 0 30px;
+					padding: 20px 0 0 30px;
+					margin-top: 20px;
 
 					svg {
 

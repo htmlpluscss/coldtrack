@@ -153,6 +153,8 @@ gulp.task('js', function() {
 
 gulp.task('serve', function() {
 
+	gulp.src('src/js/swiper.min.js').pipe(gulp.dest('build/js'));
+
 	server.init({
 		server: 'build',
 		files: [
