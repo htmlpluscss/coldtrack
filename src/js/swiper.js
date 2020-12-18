@@ -14,17 +14,13 @@
 			toggleSwipe = null,
 			resetSwipe = null;
 
-		const swipeControls = document.createElement('div'),
-			swipeNav = document.createElement('div'),
+		const swipeNav = document.createElement('div'),
 			items = swipe.querySelectorAll('.swiper-slide'),
 			count = items.length,
 			cases = swipe.classList.contains('swiper-container--cases');
 
 		swipeNav.className = 'swiper-pagination';
-		swipeControls.className = 'swiper-controls';
-
-		swipeControls.appendChild(swipeNav);
-		swipe.parentNode.appendChild(swipeControls);
+		swipe.parentNode.appendChild(swipeNav);
 
 		resetSwipe = () => {
 
@@ -60,6 +56,7 @@
 
 					mySwipe = new Swiper(swipe, {
 						loop: true,
+						autoHeight: true,
 						pagination: {
 							el: swipeNav,
 							bulletClass: 'button',

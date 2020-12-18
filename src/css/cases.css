@@ -3,24 +3,55 @@
 	padding: 60px 0;
 	text-align: center;
 
+	@media ($smWidth) {
+
+		padding-bottom: 16px;
+
+	}
+
 	&__title {
 
 		margin-bottom: 48px;
+
+		@media ($smWidth) {
+
+			margin-bottom: 0;
+
+		}
 
 	}
 
 	&__wrap {
 
+		position: relative;
+
 		@media ($smWidth) {
 
 			margin: 0 -20px;
 			overflow: hidden;
+			padding: 70px 0 44px;
 
 		}
 
 		@media ($xsWidth) {
 
 			margin: 0 -10px;
+
+		}
+
+	}
+
+	&__process {
+
+		position: absolute;
+		color: var(--text);
+		top: 18px;
+		left: 0;
+		right: 0;
+
+		&-current {
+
+			color: var(--color);
 
 		}
 
@@ -54,8 +85,14 @@
 
 			width: 100%;
 			margin: 0;
-			padding: 0 10px;
+			padding: 0 20px;
 			justify-content: center;
+
+		}
+
+		@media ($xsWidth) {
+
+			padding: 0 10px;
 
 		}
 

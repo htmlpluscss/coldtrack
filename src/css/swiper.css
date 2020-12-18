@@ -14,29 +14,6 @@
 
 	position: relative;
 
-	.swiper-controls {
-
-		position: relative;
-		top: 0;
-		left: 0;
-		right: 0;
-		z-index: 5;
-		height: 24px;
-		display: flex;
-		justify-content: space-between;
-		pointer-events: none;
-
-		@media ($mdWidth) {
-
-		}
-
-		@media ($smWidth) {
-
-
-		}
-
-	}
-
 	.swiper-container {
 
 		margin: 0 auto;
@@ -76,6 +53,7 @@
 
 		flex-shrink: 0;
 		width: 100%;
+		height: 100%;
 		position: relative;
 		transition-property: transform;
 
@@ -85,12 +63,14 @@
 
 		transition: 300ms opacity;
 		transform: translate3d(0, 0, 0);
-		z-index: 10;
+		z-index: 9;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		position: relative;
-		flex-grow: 1;
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
 
 		.button {
 
@@ -120,6 +100,21 @@
 		pointer-events: none;
 		opacity: 0;
 		z-index: -1000;
+
+	}
+
+	/* Auto Height */
+	.swiper-container-autoheight,
+	.swiper-container-autoheight .swiper-slide {
+
+		height: auto;
+
+	}
+
+	.swiper-container-autoheight .swiper-wrapper {
+
+		align-items: flex-start;
+		transition-property: transform, height;
 
 	}
 
