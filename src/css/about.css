@@ -2,6 +2,12 @@
 
 	margin-top: 96px;
 
+	@media ($mdWidth) {
+
+		margin-top: 72px;
+
+	}
+
 	&__box {
 
 		display: flex;
@@ -9,15 +15,50 @@
 		align-items: center;
 		margin-top: 100px;
 
+		@media ($mdWidth) {
+
+			margin-top: 36px;
+
+		}
+
+	}
+
+	&__img {
+
+		@media ($mdWidth) {
+
+			margin-top: auto;
+
+			img {
+
+				width: 320px;
+				height: 248px;
+
+			}
+
+		}
+
 	}
 
 	&__list {
 
 		width: 490px;
 
+		@media ($mdWidth) {
+
+			max-width: 50%;
+
+		}
+
 		.h3 {
 
 			margin: 12px 0 26px;
+
+			@media ($mdWidth) {
+
+				margin: 0 0 20px;
+
+			}
 
 		}
 
@@ -38,6 +79,12 @@
 		text-align: center;
 		margin: 96px 0 24px;
 
+		@media ($mdWidth) {
+
+			margin: 72px 0 20px;
+
+		}
+
 	}
 
 	&__intro {
@@ -47,6 +94,12 @@
 		text-align: center;
 		margin-bottom: 100px;
 		color: var(--text);
+
+		@media ($mdWidth) {
+
+			margin-bottom: 48px;
+
+		}
 
 	}
 

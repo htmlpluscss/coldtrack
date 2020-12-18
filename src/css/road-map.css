@@ -3,6 +3,12 @@
 	padding: 54px 0 48px;
 	position: relative;
 
+	@media ($mdWidth) {
+
+		padding: 36px 0;
+
+	}
+
 	&__rotate-left {
 
 		position: absolute;
@@ -33,12 +39,24 @@
 		margin: 24px 0;
 		color: var(--text);
 
+		@media ($mdWidth) {
+
+			margin: 20px 0 40px;
+
+		}
+
 	}
 
 	&__box {
 
 		position: relative;
 		padding: 24px 60px;
+
+		@media ($mdWidth) {
+
+			padding: 24px 0;
+
+		}
 
 		&::before {
 
@@ -81,6 +99,12 @@
 	&__item {
 
 		width: 418px;
+
+		@media ($mdWidth) {
+
+			width: 292px;
+
+		}
 
 		&--left {
 

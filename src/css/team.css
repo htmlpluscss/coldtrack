@@ -5,6 +5,12 @@
 	margin: 60px 0;
 	position: relative;
 
+	@media ($mdWidth) {
+
+		padding: 80px 0;
+
+	}
+
 	&__rotate-left {
 
 		position: absolute;
@@ -34,6 +40,12 @@
 		justify-content: center;
 		margin: -24px;
 
+		@media ($mdWidth) {
+
+			flex-wrap: wrap;
+
+		}
+
 	}
 
 	&__item {
@@ -43,6 +55,12 @@
 		padding: 24px;
 		background-color: #fff;
 		border-radius: 12px;
+
+		@media ($mdWidth) {
+
+			margin-bottom: 48px;
+
+		}
 
 	}
 

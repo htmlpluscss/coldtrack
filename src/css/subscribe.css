@@ -6,6 +6,12 @@
 		border-radius: 12px;
 		padding: 48px;
 
+		@media ($mdWidth) {
+
+			padding: 36px;
+
+		}
+
 	}
 
 	&__wrap {

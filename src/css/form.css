@@ -112,6 +112,15 @@
 		font-size: 18px;
 		line-height: 72px;
 
+		@media ($mdWidth) {
+
+			font-size: 18px;
+			line-height: 64px;
+			padding: 0 24px;
+			height: 64px;
+
+		}
+
 	}
 
 	&--small {

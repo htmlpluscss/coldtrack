@@ -3,6 +3,12 @@
 	text-align: center;
 	margin: 132px 0 96px;
 
+	@media ($mdWidth) {
+
+		margin: 72px 0;
+
+	}
+
 	&__logo {
 
 		display: flex;
@@ -17,6 +23,18 @@
 
 		}
 
+		@media ($mdWidth) {
+
+			margin: 24px -24px;
+
+			img {
+
+				margin: 12px 24px;
+
+			}
+
+		}
+
 	}
 
 	p {
@@ -27,6 +45,13 @@
 		width: 680px;
 		max-width: 100%;
 		margin: auto;
+
+		@media ($mdWidth) {
+
+			font-size: 20px;
+			line-height: 30px;
+
+		}
 
 	}
 

@@ -10,14 +10,34 @@
 		border-top: 1px solid color(#a4a5b0 a(30%));
 		padding-top: 72px;
 
+		@media ($mdWidth) {
+
+			display: block;
+			text-align: center;
+
+		}
+
+	}
+
+	&__logo {
+
+		@media ($mdWidth) {
+
+			margin: auto;
+
+		}
+
 	}
 
 	&__left {
 
-		order: 1;
-		width: 256px;
-		flex-shrink: 0;
-		margin-right: 32px;
+		@media ($desktop) {
+
+			width: 256px;
+			flex-shrink: 0;
+			margin-right: 32px;
+
+		}
 
 	}
 
@@ -26,15 +46,27 @@
 		flex-grow: 1;
 		display: flex;
 		justify-content: center;
-		order: 2;
 
 	}
 
 	&__right {
 
-		flex-shrink: 0;
-		width: 268px;
-		order: 3;
+		@media ($desktop) {
+
+			flex-shrink: 0;
+			width: 268px;
+
+		}
+
+		@media ($mdWidth) {
+
+			.social {
+
+				justify-content: center;
+
+			}
+
+		}
 
 		p {
 

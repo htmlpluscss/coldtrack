@@ -3,10 +3,22 @@
 	padding: 60px 0;
 	margin-top: 12px;
 
+	@media ($mdWidth) {
+
+		margin-top: 0;
+
+	}
+
 	&__title {
 
 		text-align: center;
 		margin-bottom: 72px;
+
+		@media ($mdWidth) {
+
+			margin-bottom: 36px;
+
+		}
 
 	}
 
@@ -51,6 +63,42 @@
 					display: block;
 					color: var(--blue);
 					margin-bottom: 2px;
+
+				}
+
+				&:nth-child(1) {
+
+					width: 520px;
+
+					@media ($mdWidth) {
+
+						width: auto;
+
+					}
+
+				}
+
+				&:nth-child(2) {
+
+					width: 212px;
+
+					@media ($mdWidth) {
+
+						width: 158px;
+
+					}
+
+				}
+
+				&:nth-child(3) {
+
+					width: 350px;
+
+					@media ($mdWidth) {
+
+						width: 158px;
+
+					}
 
 				}
 

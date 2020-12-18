@@ -4,6 +4,12 @@
 	z-index: 9;
 	padding: 36px 0;
 
+	@media ($mdWidth) {
+
+		padding: 24px 0;
+
+	}
+
 	.center {
 
 		width: 1440px;
@@ -14,6 +20,13 @@
 
 		display: flex;
 		align-items: center;
+		position: relative;
+
+		@media ($mdWidth) {
+
+			justify-content: center;
+
+		}
 
 	}
 
@@ -31,12 +44,70 @@
 		justify-content: center;
 		flex-grow: 1;
 
+		@media ($mdWidth) {
+
+			display: none;
+
+		}
+
 	}
 
 	&__btn {
 
 		margin-left: 64px;
 		flex-shrink: 0;
+
+		@media ($desktop) {
+
+			svg {
+
+				display: none;
+
+			}
+
+		}
+
+		@media ($mdWidth) {
+
+			margin: 0;
+			position: absolute;
+			top: 0;
+			right: 0;
+
+			.btn {
+
+				width: 40px;
+				height: 40px;
+				border-radius: 6px;
+				font-size: 0;
+				padding: 0;
+				color: transparent;
+
+			}
+
+			svg {
+
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				margin: auto;
+				fill: var(--blue);
+
+			}
+
+		}
+
+	}
+
+}
+
+@media ($desktop) {
+
+	.btn-menu-toggle {
+
+		display: none;
 
 	}
 
@@ -46,43 +117,44 @@
 
 	.btn-menu-toggle {
 
-		width: 48px;
-		height: 48px;
+		width: 40px;
+		height: 40px;
 		position: absolute;
-		top: 10px;
-		right: 8px;
+		top: 0;
+		left: 0;
+		border: 1px solid var(--blue);
+		border-radius: 6px;
 
-		&::after,
-		&::before {
+		&__top,
+		&__center,
+		&__bottom {
 
 			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			margin: auto;
-			width: 24px;
+			width: 20px;
 			height: 2px;
-			transition: var(--transitionDefault);
-			background-color: var(--color);
-			content: '';
+			top: 12px;
+			left: 10px;
+			border-radius: 2px;
+			background-color: var(--blue);
 
 		}
 
-		&::before {
+		&__center {
 
-			transform: rotate(180deg) translate3d(0, 5px, 0);
+			width: 16px;
+			margin-top: 6px;
 
 		}
 
-		&::after {
+		&__bottom {
 
-			transform: rotate(180deg) translate3d(0, -5px, 0);
+			width: 10px;
+			margin-top: 12px;
 
 		}
 
 		.menu-show & {
-
+/*
 			&::before {
 
 				transform: rotate(45deg) translate3d(0, 0px, 0);
@@ -93,7 +165,7 @@
 
 				transform: rotate(-45deg) translate3d(0, 0px, 0);
 
-			}
+			} */
 
 		}
 

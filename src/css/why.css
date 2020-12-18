@@ -5,9 +5,21 @@
 	margin: 96px 0 72px;
 	text-align: center;
 
+	@media ($mdWidth) {
+
+		margin: 72px 0 20px;
+
+	}
+
 	&__title {
 
 		margin: 72px 0;
+
+		@media ($mdWidth) {
+
+			margin: 20px 0 60px;
+
+		}
 
 	}
 
@@ -15,7 +27,13 @@
 
 		display: flex;
 		justify-content: center;
-		margin-bottom: 72px;
+		margin: 0 -20px 72px;
+
+		@media ($mdWidth) {
+
+			margin-bottom: 20px;
+
+		}
 
 	}
 

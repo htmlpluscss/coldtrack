@@ -4,6 +4,13 @@
 	margin: 60px 0;
 	position: relative;
 
+	@media ($mdWidth) {
+
+		padding-top: 36px;
+		margin: 36px 0;
+
+	}
+
 	&__rotate-left {
 
 		position: absolute;
@@ -41,6 +48,12 @@
 		margin: 24px 0 48px;
 		color: var(--text);
 
+		@media ($mdWidth) {
+
+			margin: 20px 0;
+
+		}
+
 	}
 
 	&__img {
@@ -49,6 +62,19 @@
 		justify-content: center;
 		width: 495px;
 
+		@media ($mdWidth) {
+
+			width: 320px;
+
+			img {
+
+				width: 320px;
+				height: 506px;
+
+			}
+
+		}
+
 	}
 
 	&__text {
@@ -56,6 +82,12 @@
 		width: 490px;
 		padding-right: 35px;
 		color: var(--text);
+
+		@media ($mdWidth) {
+
+			padding: 0 0 0 24px;
+
+		}
 
 		p {
 
