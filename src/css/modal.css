@@ -32,21 +32,6 @@
 		border-radius: 12px;
 		background-color: #fff;
 
-		&--done {
-
-			text-align: center;
-			font-weight: 300;
-			font-size: 16px;
-			line-height: 30px;
-
-			svg {
-
-				margin: 0 auto 16px;
-
-			}
-
-		}
-
 		@media ($smWidth) {
 
 			padding: 48px 24px;
@@ -250,6 +235,38 @@
 			fill: #fff;
 
 		}
+
+	}
+
+}
+
+
+.modal-done {
+
+	text-align: center;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 30px;
+
+	p {
+
+		a {
+
+			color: var(--blue);
+			border-bottom: 1px solid;
+
+			&:hover {
+
+				border-bottom-color: transparent;
+
+			}
+		}
+
+	}
+
+	svg {
+
+		margin: 0 auto 16px;
 
 	}
 
