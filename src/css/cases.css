@@ -16,6 +16,14 @@
 		justify-content: space-between;
 		margin: -24px;
 
+		@media ($smWidth) {
+
+			margin: 0 -20px;
+			display: block;
+			outline:1px solid red;
+padding-top: 22px;
+		}
+
 	}
 
 	&__item {
@@ -26,6 +34,26 @@
 		margin: 24px;
 		display: flex;
 		flex-direction: column;
+
+		@media ($smWidth) {
+
+			margin: 0 auto;
+			width: 320px;
+
+			img {
+
+				width: 100%;
+				object-fit: cover;
+
+			}
+
+			& + & {
+
+				display: none;
+
+			}
+
+		}
 
 	}
 

@@ -9,6 +9,12 @@
 
 	}
 
+	@media ($smWidth) {
+
+		padding-bottom: 44px;
+
+	}
+
 	&__title {
 
 		text-align: center;
@@ -17,6 +23,12 @@
 		@media ($mdWidth) {
 
 			margin-bottom: 36px;
+
+		}
+
+		@media ($smWidth) {
+
+			margin-bottom: 24px;
 
 		}
 
@@ -55,6 +67,14 @@
 				line-height: 24px;
 				padding-bottom: 21px;
 
+				@media ($smWidth) {
+
+					font-size: 14px;
+					line-height: 16px;
+					padding-bottom: 9px;
+
+				}
+
 				b {
 
 					font-weight: 400;
@@ -63,6 +83,12 @@
 					display: block;
 					color: var(--blue);
 					margin-bottom: 2px;
+
+					@media ($smWidth) {
+
+						margin-bottom: 6px;
+
+					}
 
 				}
 
@@ -73,6 +99,12 @@
 					@media ($mdWidth) {
 
 						width: auto;
+
+					}
+
+					@media ($smWidth) {
+
+						padding-left: 0;
 
 					}
 
@@ -88,6 +120,12 @@
 
 					}
 
+					@media ($smWidth) {
+
+						width: 74px;
+
+					}
+
 				}
 
 				&:nth-child(3) {
@@ -97,6 +135,12 @@
 					@media ($mdWidth) {
 
 						width: 158px;
+
+					}
+
+					@media ($smWidth) {
+
+						width: 74px;
 
 					}
 
@@ -192,6 +236,13 @@
 				vertical-align: middle;
 				text-align: left;
 
+				@media ($smWidth) {
+
+					padding: 0;
+					height: 56px;
+
+				}
+
 			}
 
 		}
@@ -207,6 +258,18 @@
 				padding: 18px 60px;
 				margin-top: 42px;
 				position: relative;
+
+				@media ($smWidth) {
+
+					padding: 19px 10px 0 30px;
+
+					svg {
+
+						left: 0;
+
+					}
+
+				}
 
 				svg {
 

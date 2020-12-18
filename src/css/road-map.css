@@ -45,6 +45,16 @@
 
 		}
 
+		@media ($smWidth) {
+
+			br {
+
+				display: none;
+
+			}
+
+		}
+
 	}
 
 	&__box {
@@ -55,6 +65,12 @@
 		@media ($mdWidth) {
 
 			padding: 24px 0;
+
+		}
+
+		@media ($smWidth) {
+
+			padding: 0;
 
 		}
 
@@ -71,6 +87,14 @@
 			background-color: #e7e6fb;
 			border-radius: 2px;
 
+			@media ($smWidth) {
+
+				width: 4px;
+				left: 8px;
+				right: auto;
+
+			}
+
 		}
 
 	}
@@ -80,6 +104,14 @@
 		display: flex;
 		padding-right: 12px;
 		margin-top: -122px;
+
+		@media ($smWidth) {
+
+			display: block;
+			margin: 0;
+			padding: 0;
+
+		}
 
 		&--2020-q4 {
 
@@ -106,11 +138,24 @@
 
 		}
 
+		@media ($smWidth) {
+
+			width: auto;
+			margin-left: 40px;
+
+		}
+
 		&--left {
 
 			.road-map__head {
 
 				text-align: right;
+
+				@media ($smWidth) {
+
+					text-align: left;
+
+				}
 
 			}
 
@@ -120,12 +165,25 @@
 
 					right: -60px;
 
+					@media ($smWidth) {
+
+						right: 100%;
+
+					}
+
 				}
 
 				&::after {
 
 					left: 100%;
 					margin-left: 52px;
+
+					@media ($smWidth) {
+
+						margin: 0;
+						left: -40px;
+
+					}
 
 				}
 
@@ -142,6 +200,12 @@
 		font-weight: 500;
 		margin: 24px 0;
 
+		@media ($smWidth) {
+
+			margin: 20px 0;
+
+		}
+
 	}
 
 	&__list {
@@ -152,6 +216,12 @@
 		counter-reset: headings 0;
 		position: relative;
 
+		@media ($smWidth) {
+
+			padding: 20px;
+
+		}
+
 		&::before {
 
 			position: absolute;
@@ -161,6 +231,13 @@
 			right: 100%;
 			content: '';
 			background-color: var(--blue);
+
+			@media ($smWidth) {
+
+				top: 38px;
+				width: 30px;
+
+			}
 
 		}
 
@@ -175,11 +252,30 @@
 			content: '';
 			background-color: var(--blue);
 
+			@media ($smWidth) {
+
+				top: 28px;
+				left: -40px;
+
+			}
+
 		}
 
 		li {
 
 			padding-left: 48px;
+
+			@media ($smWidth) {
+
+				padding-left: 40px;
+
+				&::before {
+
+					left: 0;
+
+				}
+
+			}
 
 			&::before {
 
@@ -195,6 +291,12 @@
 			& + li {
 
 				margin-top: 12px;
+
+				@media ($smWidth) {
+
+					margin-top: 10px;
+
+				}
 
 			}
 

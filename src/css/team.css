@@ -11,6 +11,12 @@
 
 	}
 
+	@media ($smWidth) {
+
+		margin: 44px 0 80px;
+
+	}
+
 	&__rotate-left {
 
 		position: absolute;
@@ -32,6 +38,12 @@
 		text-align: center;
 		margin-bottom: 132px;
 
+		@media ($smWidth) {
+
+			margin-bottom: htmlpluscss/coldtrac;
+
+		}
+
 	}
 
 	&__list  {
@@ -43,6 +55,7 @@
 		@media ($mdWidth) {
 
 			flex-wrap: wrap;
+			margin: 0;
 
 		}
 
@@ -62,6 +75,13 @@
 
 		}
 
+		@media ($smWidth) {
+
+			margin: 100px 0 0;
+			padding: 30px 20px;
+
+		}
+
 	}
 
 	&__img {
@@ -69,6 +89,12 @@
 		margin: -90px 0 24px;
 		display: flex;
 		justify-content: center;
+
+		@media ($smWidth) {
+
+			margin-top: -96px;
+
+		}
 
 		img {
 

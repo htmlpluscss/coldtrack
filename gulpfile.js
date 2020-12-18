@@ -134,7 +134,7 @@ gulp.task('css', function () {
 
 gulp.task('js', function() {
 
-	return gulp.src(['src/js/js.js','src/js/*.js'])
+	return gulp.src(['src/js/pubsub.min.js','src/js/js.js','src/js/*.js','!src/js/*.min.js'])
 		.pipe(sourcemaps.init())
 		.pipe(concat('scripts.js'))
 		.pipe(babel({

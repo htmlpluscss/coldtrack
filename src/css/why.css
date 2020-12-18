@@ -11,6 +11,12 @@
 
 	}
 
+	@media ($smWidth) {
+
+		margin: 40px 0 20px;
+
+	}
+
 	&__title {
 
 		margin: 72px 0;
@@ -35,12 +41,26 @@
 
 		}
 
+		@media ($smWidth) {
+
+			display: block;
+			margin: 0;
+
+		}
+
 	}
 
 	&__item {
 
 		width: 300px;
 		margin: 0 20px;
+
+		@media ($smWidth) {
+
+			width: auto;
+			margin: 40px 0 20px;
+
+		}
 
 		.h4 {
 
