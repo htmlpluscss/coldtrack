@@ -43,7 +43,6 @@
 
 			width: 256px;
 			flex-shrink: 0;
-			margin-right: 32px;
 
 		}
 
@@ -62,7 +61,6 @@
 		@media ($desktop) {
 
 			flex-shrink: 0;
-			width: 268px;
 
 		}
 
