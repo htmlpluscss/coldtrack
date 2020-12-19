@@ -32,7 +32,28 @@
 
 	// btn header
 
-	document.querySelector('.btn-menu-toggle').addEventListener('click', () =>
-		document.body.classList.toggle('menu-show'));
+	document.addEventListener('click', event => {
+
+		if(event.target.closest('.btn-menu-toggle')) {
+
+			document.body.classList.toggle('menu-show');
+
+		}
+
+		if(event.target.closest('.menu__link')) {
+
+			let href = event.target.closest('.menu__link').getAttribute('href');
+
+			href = href.split('#');
+
+			if(document.querySelector('#'+href[1])) {
+
+				document.body.classList.remove('menu-show');
+
+			}
+
+		}
+
+	});
 
 })();

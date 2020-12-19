@@ -2,37 +2,24 @@
 
 	position: relative;
 	z-index: 9;
-	padding: 36px 0;
+	width: 1440px;
+	max-width: 100%;
+	display: flex;
+	align-items: center;
+	position: relative;
+	padding: 36px;
+	margin: 0 auto;
 
 	@media ($mdWidth) {
 
-		padding: 24px 0;
+		padding: 24px;
+		flex-direction: column;
 
 	}
 
 	@media ($smWidth) {
 
-		padding: 20px 0;
-
-	}
-
-	.center {
-
-		width: 1440px;
-
-	}
-
-	&__box {
-
-		display: flex;
-		align-items: center;
-		position: relative;
-
-		@media ($mdWidth) {
-
-			justify-content: center;
-
-		}
+		padding: 20px;
 
 	}
 
@@ -40,6 +27,21 @@
 
 		position: relative;
 		flex-shrink: 0;
+		transition: none;
+
+		@media ($mdWidth) {
+
+			display: flex;
+			justify-content: center;
+
+			.menu-show & {
+
+				opacity: 0;
+				pointer-events: none;
+
+			}
+
+		}
 
 		@media ($smWidth) {
 
@@ -64,6 +66,7 @@
 		@media ($mdWidth) {
 
 			display: none;
+			align-items: center;
 
 		}
 
@@ -74,7 +77,9 @@
 		margin-left: 64px;
 		flex-shrink: 0;
 
-		@media ($desktop) {
+		.btn {
+
+			transition: none;
 
 			svg {
 
@@ -88,31 +93,56 @@
 
 			margin: 0;
 			position: absolute;
-			top: 0;
-			right: 0;
+			top: 24px;
+			right: 24px;
 
 			.btn {
 
-				width: 40px;
 				height: 40px;
-				border-radius: 6px;
-				font-size: 0;
-				padding: 0;
-				color: transparent;
+				line-height: 40px;
+				padding: 0 16px;
+
+				svg {
+
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					margin: auto;
+					fill: var(--blue);
+
+				}
 
 			}
 
-			svg {
+			body:not(.menu-show) & {
 
-				position: absolute;
-				top: 0;
-				left: 0;
-				right: 0;
-				bottom: 0;
-				margin: auto;
-				fill: var(--blue);
+				.btn {
+
+					width: 40px;
+					height: 40px;
+					border-radius: 6px;
+					font-size: 0;
+					padding: 0;
+					color: transparent;
+
+					svg {
+
+						display: block;
+
+					}
+
+				}
 
 			}
+
+		}
+
+		@media ($smWidth) {
+
+			top: 20px;
+			right: 20px;
 
 		}
 
@@ -120,25 +150,28 @@
 
 }
 
-@media ($desktop) {
+.btn-menu-toggle {
 
-	.btn-menu-toggle {
+	@media ($desktop) {
 
 		display: none;
 
 	}
 
-}
+	@media ($smWidth) {
 
-@media ($mdWidth) {
+		top: 20px;
+		left: 20px;
 
-	.btn-menu-toggle {
+	}
+
+	@media ($mdWidth) {
 
 		width: 40px;
 		height: 40px;
 		position: absolute;
-		top: 0;
-		left: 0;
+		top: 24px;
+		left: 24px;
 		border: 1px solid var(--blue);
 		border-radius: 6px;
 
@@ -147,50 +180,68 @@
 		&__bottom {
 
 			position: absolute;
-			width: 20px;
+			width: 16px;
 			height: 2px;
-			top: 12px;
+			top: 18px;
 			left: 10px;
 			border-radius: 2px;
 			background-color: var(--blue);
+			transform: rotate(0deg);
+			will-change: transform;
+			transition: var(--transitionDefault);
 
 		}
 
 		&__center {
 
-			width: 16px;
-			margin-top: 6px;
+			width: 20px;
+			top: 12px;
 
 		}
 
 		&__bottom {
 
 			width: 10px;
-			margin-top: 12px;
+			top: 24px;
 
 		}
 
 		.menu-show & {
-/*
-			&::before {
 
-				transform: rotate(45deg) translate3d(0, 0px, 0);
+			border-color: color(var(--blue) a(20%));
+
+			&__top,
+			&__center,
+			&__bottom {
+
+				transform: rotate(-45deg);
+				width: 20px;
+				top: 18px;
 
 			}
 
-			&::after {
+			&__bottom {
 
-				transform: rotate(-45deg) translate3d(0, 0px, 0);
+				transform: rotate(-135deg);
 
-			} */
+			}
 
 		}
 
 	}
 
+}
+
+@media ($mdWidth) {
+
 	.menu-show {
 
-		.main {
+		background-color: #F5F5FC;
+
+		.main,
+		.footer__left,
+		.footer__center,
+		.footer__right-head {
 
 			display: none;
 
@@ -199,19 +250,28 @@
 		.header {
 
 			flex-grow: 1;
-			border-bottom: 0;
 
 		}
 
 		.header__menu {
 
-			display: block !important;
+			display: flex !important;
 
 		}
 
 		.footer {
 
-			background-color: transparent;
+			margin: 0 0 44px;
+
+			&__box {
+
+				border-top: 0;
+				padding: 0 0 46px;
+				background-repeat: no-repeat;
+				background-position: bottom;
+				background-image: url(/img/logo-menu.svg);
+
+			}
 
 		}
 
