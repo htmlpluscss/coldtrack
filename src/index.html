@@ -1,18 +1,36 @@
-{% set title = site %}
+{% set title = "Try The Cheapest Cloud Space Ever " %}
+
+{% set description = "Uber for Clouds: first to market Aggregator of Decentralized Data Storages such as Filecoin." %}
+
+{% set urlPage = "main" %}
+
+{% set state = "main" %}
+
+{% set preloadImage = [
+	{
+		media: "(min-width: 1200px)",
+		img : "/img/cloud-space/img.svg"
+	},
+	{
+		media: "(max-width: 360px)",
+		img : "/img/cloud-space/img.svg"
+	}
+] %}
 
 {% extends "template/base.html" %}
 
 {% block content %}
 
-	<ul style="margin: 24px" class="h2">
-		<li><a href="/main">Main</a></li>
-		<li><a href="/demo">Live Demo</a></li>
-		<li><a href="/privacy-policy">Privacy Policy</a></li>
-		<li><a href="/terms-and-conditions">Terms and conditions</a></li>
-	</ul>
-
-	<button style="margin: 24px" class="btn btn--blue" data-modal="done">
-		done
-	</button>
+{% include "main/cloud-space.html" %}
+{% include "main/subscribe.html" %}
+{% include "main/decentralized.html" %}
+{% include "main/about.html" %}
+{% include "main/how-works.html" %}
+{% include "main/why.html" %}
+{% include "main/cases.html" %}
+{% include "main/prices.html" %}
+{% include "main/road-map.html" %}
+{% include "main/team.html" %}
+{% include "main/subscribe.html" %}
 
 {% endblock %}
