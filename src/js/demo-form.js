@@ -21,4 +21,16 @@
 
 	});
 
+	// accordion table
+
+	form.addEventListener('click', event => {
+
+		if(event.target.closest('.demo-table__open')) {
+
+			event.target.closest('tr').classList.toggle('is-open');
+
+		}
+
+	});
+
 })(document.querySelector('.demo-form'));

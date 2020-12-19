@@ -159,46 +159,153 @@
 
 		}
 
-		table {
+	}
 
-			width: 100%;
-			margin: 15px 0;
+	&-table {
 
-			thead {
+		width: 100%;
+		margin: 15px 0;
 
-				th {
+		@media ($smWidth) {
 
-					text-align: left;
-					font-weight: 500;
-					color: var(--text);
-					font-size: 16px;
-					line-height: 26px;
-					padding: 12px;
-					border-bottom: 2px solid color(#a4a5b0 a(30%));
+			display: block;
+
+			tbody,
+			tr,
+			td {
+
+				display: block;
+
+			}
+
+			tr {
+
+				border-bottom: 2px solid color(#a4a5b0 a(30%));
+				padding: 20px 0;
+
+				&.is-open {
+
+					.demo-table__open svg {
+
+						transform: scale(-1);
+
+					}
+
+					td {
+
+						display: block !important;
+
+					}
 
 				}
 
 			}
 
-			tr:nth-child(2n) td {
+		}
 
-				background-color: color(#f3f2fd a(50%));
+		thead {
+
+			@media ($smWidth) {
+
+				display: none;
 
 			}
 
-			td {
+			th {
 
-				padding: 20px 12px;
-				vertical-align: top;
-				font-weight: 300;
+				text-align: left;
+				font-weight: 500;
+				color: var(--text);
 				font-size: 16px;
-				line-height: 20px;
+				line-height: 26px;
+				padding: 12px;
+				border-bottom: 2px solid color(#a4a5b0 a(30%));
 
 			}
 
 		}
 
-		&__file {
+		tr:nth-child(2n) td {
+
+			background-color: color(#f3f2fd a(50%));
+
+			@media ($smWidth) {
+
+				background-color: #fff;
+
+			}
+
+		}
+
+		td {
+
+			padding: 20px 12px;
+			vertical-align: top;
+			font-weight: 300;
+			font-size: 16px;
+			line-height: 20px;
+
+			@media ($smWidth) {
+
+				padding: 0;
+
+				&::before {
+
+					content: attr(aria-label);
+					display: block;
+					font-weight: 500;
+					color: var(--text);
+					font-size: 16px;
+					line-height: 26px;
+					margin-bottom: 4px;
+
+				}
+
+				& ~ td {
+
+					display: none;
+					padding-top: 10px;
+
+				}
+
+			}
+
+		}
+
+		&__btns {
+
+			display: flex;
+			justify-content: space-between;
+
+		}
+
+		&__open {
+
+			display: none;
+			width: 24px;
+			height: 20px;
+
+			svg {
+
+				fill: var(--text);
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				margin: auto;
+				transition: var(--transitionDefault);
+
+			}
+
+			@media ($smWidth) {
+
+				display: block;
+
+			}
+
+		}
+
+		&__modal {
 
 			color: var(--blue);
 			font-size: inherit;
