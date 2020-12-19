@@ -53,7 +53,7 @@
 		align-items: center;
 		justify-content: space-between;
 
-		@media ($smWidth) {
+		@media ($mdWidth) {
 
 			display: block;
 
@@ -77,19 +77,7 @@
 
 		@media ($mdWidth) {
 
-			margin: 20px 0;
-
-		}
-
-		@media ($smWidth) {
-
-			margin: 22px 0 40px;
-
-			br {
-
-				display: none;
-
-			}
+			margin: 20px 0 40px;
 
 		}
 
@@ -103,7 +91,9 @@
 
 		@media ($mdWidth) {
 
-			width: 320px;
+			float: left;
+			width: auto;
+			margin-right: 48px;
 
 			img {
 
@@ -117,6 +107,8 @@
 		@media ($smWidth) {
 
 			width: 100%;
+			float: none;
+			margin: 0;
 
 			img {
 
@@ -141,19 +133,17 @@
 
 	&__text {
 
-		width: 490px;
-		padding-right: 35px;
+		width: 495px;
 		color: var(--text);
 
 		@media ($mdWidth) {
 
-			padding: 0 0 0 24px;
+			width: auto;
 
 		}
 
 		@media ($smWidth) {
 
-			width: auto;
 			padding: 20px 0;
 
 			p {
@@ -168,6 +158,23 @@
 
 			margin: 24px 0;
 			line-height: 30px;
+
+		}
+
+		a {
+
+			color: var(--blue);
+			border-bottom: 1px solid;
+
+			@media ($desktop) {
+
+				&:hover {
+
+					border-bottom-color: transparent;
+
+				}
+
+			}
 
 		}
 
