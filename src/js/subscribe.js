@@ -8,7 +8,7 @@
 
 	const eventModalShow = new CustomEvent("modalShow", {
 		detail: {
-			selector: "subscribe"
+			selector: "done"
 		}
 	});
 
@@ -31,7 +31,7 @@
 
 		}
 
-		document.querySelector('#modal-subscribe__result').innerHTML = data.msg;
+		document.querySelector('#modal-done__messange').innerHTML = data.msg;
 
 		document.querySelector('.modal').dispatchEvent(eventModalShow);
 

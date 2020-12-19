@@ -80,7 +80,7 @@
 
 			&:hover {
 
-				background-color: #e6f8ed;
+				background-color: color(var(--green) a(90%));
 
 			}
 
@@ -98,6 +98,8 @@
 
 			&:hover {
 
+				color: #fff;
+				background-color: var(--blue);
 
 			}
 
