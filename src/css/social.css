@@ -16,6 +16,16 @@
 		border-radius: 50%;
 		display: block;
 
+		@media ($desktop) {
+
+			&:hover svg {
+
+				fill: #524BE0;
+
+			}
+
+		}
+
 		svg {
 
 			fill: var(--blue);

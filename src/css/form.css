@@ -64,7 +64,7 @@
 
 			&:hover {
 
-				background-color: color(var(--blue) a(90%));
+				background-color: #524BE0;
 
 			}
 
@@ -80,7 +80,7 @@
 
 			&:hover {
 
-				background-color: color(var(--green) a(90%));
+				background-color: #36C76E;
 
 			}
 
@@ -98,8 +98,7 @@
 
 			&:hover {
 
-				color: #fff;
-				background-color: var(--blue);
+				box-shadow: inset 0 0 0 1px #9995ed;
 
 			}
 

@@ -14,8 +14,8 @@
 
 	h1 {
 
-		font-size: 30px;
-		line-height: 40px;
+		font-size: 48px;
+		line-height: 60px;
 		font-weight: 500;
 		margin: 36px 0;
 
@@ -32,7 +32,7 @@
 
 	h3 {
 
-		font-size: 24px;
+		font-size: 22px;
 		line-height: 30px;
 		font-weight: 500;
 		margin: 30px 0 20px;
@@ -41,7 +41,7 @@
 
 	h4 {
 
-		font-size: 20px;
+		font-size: 18px;
 		line-height: 24px;
 		font-weight: 500;
 		margin: 30px 0 20px;
@@ -76,7 +76,7 @@
 
 	ul {
 
-		margin: 24px 0;
+		margin: 24px;
 
 		li {
 
@@ -101,7 +101,7 @@
 
 	ol {
 
-		margin: 24px 0;
+		margin: 24px;
 		counter-reset: headings 0;
 
 		ul {

@@ -5,4 +5,4 @@
 **Android >= 5**
 
 ### Working hours:
-19.6
+20.2
