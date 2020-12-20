@@ -53,6 +53,13 @@
 				z-index: 9;
 				transition: opacity var(--transitionDefault);
 
+				@media ($smWidth) {
+
+					left: 20px;
+					right: 20px;
+
+				}
+
 				&-head {
 
 					font-weight: 500;
