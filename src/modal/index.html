@@ -1,0 +1,19 @@
+{% set title = "Modal " %}
+
+{% extends "template/base.html" %}
+
+{% block content %}
+
+<button class="btn btn--blue" type="button" data-modal="submitted" style="margin: 20px">
+	Transaction submitted
+</button>
+
+<button class="btn btn--blue" type="button" data-modal="failed" style="margin: 20px">
+	Transaction failed, please try again
+</button>
+
+<button class="btn btn--blue" type="button" data-modal="waiting" style="margin: 20px">
+	Waiting for confirmation
+</button>
+
+{% endblock %}

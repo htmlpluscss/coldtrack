@@ -339,3 +339,181 @@
 	}
 
 }
+
+.select-wallet {
+
+	width: 468px;
+	padding: 48px;
+
+	@media ($smWidth) {
+
+		padding: 36px 24px;
+
+	}
+
+	&__title {
+
+		margin: 12px 0;
+
+	}
+
+	&__text {
+
+		margin: 12px 0;
+		color: var(--text);
+		position: relative;
+
+		&--ico {
+
+			padding-left: 32px;
+
+			svg {
+
+				position: absolute;
+				top: 3px;
+				left: 0;
+				fill: var(--blue);
+
+			}
+
+		}
+
+	}
+
+	&__radio {
+
+		position: relative;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+
+		&-group {
+
+			margin: 36px 0 24px;
+
+			hr {
+
+				margin: 12px 0;
+				background-color: color(var(--text) a(20%));
+
+			}
+
+		}
+
+		@media ($desktop) {
+
+			&:hover::after {
+
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				content: 'selector';
+				margin: auto;
+				height: 24px;
+				color: var(--blue);
+				text-decoration: underline;
+
+			}
+
+		}
+
+	}
+
+	&__logo {
+
+		width: 60px;
+		height: 60px;
+		display: flex;
+		border-radius: 50%;
+		justify-content: center;
+		align-items: center;
+		background-color: #F6F6FC;
+		margin-right: 12px;
+
+	}
+
+	&__label {
+
+		color: #000;
+		font-weight: 600;
+
+	}
+
+	&__input:checked + &__label::after {
+
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		top: -2px;
+		left: 40px;
+		content: '';
+		background-color: var(--green);
+		background-position: center;
+		border-radius: 50%;
+		background-repeat: no-repeat;
+		background-image: url("data:image/svg+xml,%3Csvg width='10' height='7' viewBox='0 0 10 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.17 7L0 3.11l1.67-1.55 2.5 2.33L8.33 0 10 1.56 4.17 7z' fill='%23fff'/%3E%3C/svg%3E");
+
+	}
+
+}
+
+.modal-info {
+
+	width: 420px;
+	padding: 48px;
+	text-align: center;
+
+	@media ($smWidth) {
+
+		padding: 36px 24px;
+
+	}
+
+	&__ico {
+
+		display: flex;
+		justify-content: center;
+		margin-bottom: 16px;
+
+	}
+
+	&__text {
+
+		font-weight: 300;
+		font-size: 16px;
+		line-height: 30px;
+		margin: 2px 0;
+
+		a {
+
+			color: var(--blue);
+
+		}
+
+		&-second {
+
+			color: var(--text);
+			font-size: 14px;
+			line-height: 20px;
+			font-weight: 300;
+
+			a {
+
+				color: var(--blue);
+
+			}
+
+		}
+
+	}
+
+	&__btn {
+
+		margin-top: 24px;
+		display: flex;
+		justify-content: center;
+
+	}
+
+}
