@@ -13,7 +13,13 @@
 	@media ($mdWidth) {
 
 		padding: 24px;
-		flex-direction: column;
+		flex-wrap: wrap;
+
+		.menu-show & {
+
+			align-items: baseline;
+
+		}
 
 	}
 
@@ -32,15 +38,14 @@
 		@media ($mdWidth) {
 
 			display: flex;
+			flex-grow: 1;
 			justify-content: center;
 
 			.menu-show & {
 
-				opacity: 0;
-				pointer-events: none;
+				display: none;
 
 			}
-
 		}
 
 		@media ($smWidth) {
@@ -49,6 +54,12 @@
 
 				width: 170px;
 				height: 34px;
+
+			}
+
+			.in-logged & {
+
+				justify-content: flex-end;
 
 			}
 
@@ -67,6 +78,7 @@
 
 			display: none;
 			align-items: center;
+			width: 100%;
 
 		}
 
@@ -74,7 +86,6 @@
 
 	&__btn {
 
-		margin-left: 64px;
 		flex-shrink: 0;
 
 		.btn {
@@ -91,10 +102,14 @@
 
 		@media ($mdWidth) {
 
-			margin: 0;
-			position: absolute;
-			top: 24px;
-			right: 24px;
+			.menu-show & {
+
+				order: 10;
+				width: 100%;
+				display: flex;
+				justify-content: center;
+
+			}
 
 			.btn {
 
@@ -141,10 +156,40 @@
 
 		@media ($smWidth) {
 
-			top: 20px;
-			right: 20px;
 
 		}
+
+	}
+
+	&__wallet {
+
+		@media ($mdWidth) {
+
+			.menu-show & {
+
+				display: none;
+
+			}
+
+		}
+
+		@media ($smWidth) {
+
+			margin-top: 24px;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+
+		}
+
+	}
+
+	&__btn-menu {
+
+		order: -1;
+		height: 40px;
+		width: 40px;
+		flex-shrink: 0;
 
 	}
 
@@ -152,28 +197,23 @@
 
 .btn-menu-toggle {
 
-	@media ($desktop) {
-
-		display: none;
-
-	}
 
 	@media ($smWidth) {
 
-		top: 20px;
-		left: 20px;
-
+/* 		top: 20px;
+left: 20px;
+position: absolute;
+ */
 	}
 
 	@media ($mdWidth) {
 
-		width: 40px;
-		height: 40px;
-		position: absolute;
-		top: 24px;
-		left: 24px;
 		border: 1px solid var(--blue);
 		border-radius: 6px;
+		position: relative;
+		display: block;
+		width: 40px;
+		height: 40px;
 
 		&__top,
 		&__center,

@@ -1,16 +1,37 @@
-	<header class="header">
+	<header class="header{% if logged %} in-logged{% endif %}">
 
-		<a href="/" class="header__logo" title="{{ site }}">
+		<div class="header__logo">
 
-			<img src="/img/logo.svg" alt="{{ site }}" loading="lazy" width="209" height="42">
+			<a href="/" title="{{ site }}">
 
-		</a>
+				<img src="/img/logo.svg" alt="{{ site }}" loading="lazy" width="209" height="42">
+
+			</a>
+
+		</div>
 
 		<div class="header__menu">
 
 {% include "template/menu.html" %}
 
 		</div>
+
+{% if logged %}
+
+		<div class="header__wallet">
+
+			<a class="wallet">
+				<span class="wallet__value">
+					0.900<span class="hidden-xs">0000000096</span> CLS
+				</span>
+				<span class="wallet__name">
+					0x0659...71FA
+				</span>
+			</a>
+
+		</div>
+
+{% else %}
 
 		<div class="header__btn">
 
@@ -23,10 +44,16 @@
 
 		</div>
 
-		<button class="button btn-menu-toggle" type="button" aria-label="Menu">
-			<span class="btn-menu-toggle__top"></span>
-			<span class="btn-menu-toggle__center"></span>
-			<span class="btn-menu-toggle__bottom"></span>
-		</button>
+{% endif %}
+
+		<div class="header__btn-menu visible-md">
+
+			<button class="button btn-menu-toggle" type="button" aria-label="Menu">
+				<span class="btn-menu-toggle__top"></span>
+				<span class="btn-menu-toggle__center"></span>
+				<span class="btn-menu-toggle__bottom"></span>
+			</button>
+
+		</div>
 
 	</header>

@@ -1,0 +1,44 @@
+.wallet {
+
+	display: flex;
+	border-radius: 7px;
+	padding: 1px;
+	font-size: 15px;
+	font-weight: 500;
+	align-items: center;
+
+	color: var(--color);
+	background-color: #ECECF9;
+
+	&__value {
+
+		flex-shrink: 0;
+		line-height: 34px;
+		padding: 0 12px;
+
+	}
+
+	&__name {
+
+		flex-shrink: 0;
+		padding: 6px 12px;
+		display: flex;
+		align-items: center;
+		background-color: #cbcbed;
+		border-radius: 6px;
+
+		&::after {
+
+			width: 16px;
+			height: 16px;
+			border-radius: 50%;
+			margin-left: 10px;
+			flex-shrink: 0;
+			background-color: var(--green);
+			content: '';
+
+		}
+
+	}
+
+}
