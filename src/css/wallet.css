@@ -15,6 +15,7 @@
 		flex-shrink: 0;
 		line-height: 34px;
 		padding: 0 12px;
+		flex-grow: 1;
 
 	}
 
